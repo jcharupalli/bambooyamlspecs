@@ -1,1 +1,21 @@
-hi
+---
+version: 2
+plan:
+  project-key: TEST
+  key: TEST
+  name: TEST
+stages:
+- Default Stage:
+    manual: false
+    final: false
+    jobs:
+    - Default Job
+Default Job:
+  key: JOB1
+  tasks:
+  - script:
+      interpreter: SHELL
+      scripts:
+      - pwd
+      - ls
+
