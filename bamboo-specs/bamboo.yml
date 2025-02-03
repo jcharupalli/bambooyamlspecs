@@ -3,7 +3,7 @@ version: 2
 plan:
   project-key: TEST
   key: TEST
-  name: TEST
+  name: TEST2
 stages:
 - Default Stage:
     manual: false
