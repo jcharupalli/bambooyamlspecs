@@ -17,4 +17,5 @@ Default Job:
       interpreter: SHELL
       scripts:
       - pwd
+      - ls
 
