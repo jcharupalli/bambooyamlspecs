@@ -1,0 +1,19 @@
+stages:
+- Default Stage:
+    manual: false
+    final: false
+    jobs:
+    - Default Job
+Default Job:
+  key: JOB1
+  tasks:
+  - script:
+      interpreter: SHELL
+      scripts:
+      - echo "hi" >> hi.txt
+      description: echo
+  artifacts:
+  - name: deploy1
+    pattern: '*.txt'
+    shared: true
+    required: true
