@@ -1,14 +1,3 @@
-plan:
-  project-key: TEST
-  key: TEST
-  name: TESTN
-stages:
-- Default Stage:
-    manual: false
-    final: false
-    jobs:
-    - Default Job
-Default Job:
   key: JOB1
   tasks:
   - script:
