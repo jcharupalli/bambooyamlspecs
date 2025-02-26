@@ -4,3 +4,14 @@ plan: !include builds/plan.yaml
 stages: !include builds/stages.yaml
 Build: !include builds/artifact.yaml
 
+branch-overrides:
+  -
+    integration-branch:
+      disable-expiry: true
+      Build: !include builds/artifact.yaml
+  -
+    main:
+      Build: !include builds/artifact.yaml
+  -
+    develop:
+      disable-expiry: true
