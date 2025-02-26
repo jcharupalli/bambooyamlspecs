@@ -2,7 +2,7 @@
 version: 2
 plan: !include builds/plan.yaml
 stages: !include builds/stages.yaml
-Build: !include builds/artifact.yaml
+Build: !include builds/job.yaml
 
 branch-overrides:
   -
