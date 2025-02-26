@@ -8,5 +8,5 @@ branch-overrides:
     integration-branch:
       branch-config:
       disable-expiry: true
-      Build: !include jobs/job-build-artifact.yaml
+      Build: !include builds/artifact.yaml
 
