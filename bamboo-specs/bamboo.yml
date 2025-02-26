@@ -1,12 +1,7 @@
 ---
 version: 2
 plan: !include builds/plan.yaml
-stages:
-- Default Stage:
-    manual: false
-    final: false
-    jobs:
-    - Build
+stages: !include builds/stages.yaml
 branch-overrides:
 -
 develop:
