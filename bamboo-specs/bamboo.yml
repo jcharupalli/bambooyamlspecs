@@ -15,3 +15,6 @@ branch-overrides:
   -
     develop:
       disable-expiry: true
+  - 
+    branch1:
+      disable-expiry: true
