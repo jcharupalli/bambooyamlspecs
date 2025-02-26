@@ -1,0 +1,5 @@
+- Default Stage:
+    manual: false
+    final: false
+    jobs:
+    - Build
