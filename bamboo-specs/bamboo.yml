@@ -6,7 +6,6 @@ Build: !include builds/artifact.yaml
 branch-overrides:
   -
     integration-branch:
-      branch-config:
       disable-expiry: true
       Build: !include builds/artifact.yaml
 
