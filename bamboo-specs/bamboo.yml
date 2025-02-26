@@ -6,10 +6,7 @@ Build: !include builds/artifact.yaml
 branch-overrides:
   -
     integration-branch:
-      stages:
-        - Different stage:
-            - Different job
-      Different job:
-        tasks:
-          - script: echo 'Override job'
+      branch-config:
+      disable-expiry: true
+      Build: !include jobs/job-build-artifact.yaml
 
