@@ -1,15 +1,3 @@
 ---
 version: 2
-branch-overrides:
--
-develop:
-branch-config:
-disable-expiry: true
--
-^integration\/[A-Za-z\d]+$:
-branch-config:
-disable-expiry: true
-Build: !include builds/artifact.yaml
--
-main:
-Build: !include builds/artifact.yaml
+plan: !include builds/plan.yaml
