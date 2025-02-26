@@ -2,22 +2,3 @@ plan:
   project-key: TEST
   key: TEST
   name: TESTN
-stages:
-- Default Stage:
-    manual: false
-    final: false
-    jobs:
-    - Build
-branch-overrides:
--
-develop:
-branch-config:
-disable-expiry: true
--
-^integration\/[A-Za-z\d]+$:
-branch-config:
-disable-expiry: true
-Build: !include builds/artifact.yaml
--
-main:
-Build: !include builds/artifact.yaml
