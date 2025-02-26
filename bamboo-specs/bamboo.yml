@@ -1,9 +1,5 @@
 ---
 version: 2
-plan:
-  project-key: TEST
-  key: TEST
-  name: TESTN
 branch-overrides:
 -
 develop:
