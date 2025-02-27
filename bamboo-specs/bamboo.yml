@@ -4,6 +4,11 @@ plan: !include builds/plan.yaml
 stages: !include builds/stages.yaml
 Build: !include builds/job.yaml
 
+triggers:
+- github-trigger:
+    repositories:
+    - test1
+
 branch-overrides:
   -
     integration-branch1:
