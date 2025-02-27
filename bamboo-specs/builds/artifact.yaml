@@ -3,7 +3,7 @@
   - script:
       interpreter: SHELL
       scripts:
-      - echo "hiiii" >> hi.txt
+      - echo "hiiiiiii" >> hi.txt
       description: echo
   artifacts:
   - name: deploy1
