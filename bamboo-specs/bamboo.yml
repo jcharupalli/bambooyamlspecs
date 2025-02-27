@@ -2,19 +2,19 @@
 version: 2
 plan: !include builds/plan.yaml
 stages: !include builds/stages.yaml
-Build: !include builds/artifact.yaml
+Build: !include builds/job.yaml
 
 branch-overrides:
   -
-    integration-branch:
+    integration-branch1:
       disable-expiry: true
       Build: !include builds/artifact.yaml
   -
     main:
       Build: !include builds/artifact.yaml
   -
-    develop:
+    new:
       disable-expiry: true
   - 
-    branch1:
+    branch2:
       disable-expiry: true
